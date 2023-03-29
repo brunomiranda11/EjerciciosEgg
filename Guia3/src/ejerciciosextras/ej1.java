@@ -16,11 +16,11 @@ public class ej1 {
        int cantDias =0;
        while(resto > diaMinutos){
            
-           resto = minutos % diaMinutos;
-           cantDias = minutos / diaMinutos;
+           resto = minutos % diaMinutos; // 1600 - 1440 = 160  
+           cantDias = minutos / diaMinutos; // 
            
        }
-       int cantHoras = resto / horaMinutos;
+       int cantHoras = resto / horaMinutos; // 160 / 60 = 2
        
         System.out.println("La cantidad es: " + cantDias + " dia/s y "
                 + cantHoras + " horas.");
