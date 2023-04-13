@@ -32,7 +32,7 @@ public void crearRectangulo(){
 public double calcularPerimetro(){
     return (base+altura)*2;
 }
-void dibujarRectangulo(){
+public void dibujarRectangulo(){
     for (int i = 0; i < altura; i++) {
             for (int j = 0; j < base; j++) {
                 if (i == 0 || j == 0 || j == base - 1 || i == altura - 1) {

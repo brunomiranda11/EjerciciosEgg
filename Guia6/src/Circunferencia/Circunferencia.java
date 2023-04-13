@@ -12,6 +12,9 @@ public class Circunferencia {
    public Circunferencia(double radio){
         this.radio = radio;
     }
+   public Circunferencia(){
+       
+   }
     
     public void crearC(){
         Scanner sc = new Scanner(System.in);
