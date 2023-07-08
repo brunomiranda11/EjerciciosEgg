@@ -49,10 +49,10 @@ public class ServicioPais {
             if(pais.getPais().equalsIgnoreCase(p)){
                 it.remove();
             System.out.println("Se eliminó: " + pais.getPais());
-            }else{
-                System.out.println("No se encontró el país");
+            break;
             }
         }
+        System.out.println("No se encontró el pais");
       
     }
 
