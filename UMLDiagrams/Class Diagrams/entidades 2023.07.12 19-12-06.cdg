@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="entidades">
+  <ClassDiagramComponents>
+    <Class name="Autor" package="entidades" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="serialVersionUID" type="long" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="id" type="Integer" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="alta" type="Boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="Boolean" name="alta"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getId" returnType="Integer" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="Integer" name="id"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getAlta" returnType="Boolean" visibility="public"/>
+        <Method name="setAlta" returnType="void" visibility="public">
+          <Argument type="Boolean" name="alta"/>
+        </Method>
+        <Method name="hashCode" returnType="int" visibility="public"/>
+        <Method name="equals" returnType="boolean" visibility="public">
+          <Argument type="Object" name="object"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Editorial" package="entidades" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="serialVersionUID" type="long" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="id" type="Integer" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="alta" type="Boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="Boolean" name="alta"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getId" returnType="Integer" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="Integer" name="id"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getAlta" returnType="Boolean" visibility="public"/>
+        <Method name="setAlta" returnType="void" visibility="public">
+          <Argument type="Boolean" name="alta"/>
+        </Method>
+        <Method name="hashCode" returnType="int" visibility="public"/>
+        <Method name="equals" returnType="boolean" visibility="public">
+          <Argument type="Object" name="object"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Libro" package="entidades" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="serialVersionUID" type="long" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="isbn" type="Long" visibility="private"/>
+        <Field name="titulo" type="String" visibility="private"/>
+        <Field name="anio" type="Integer" visibility="private"/>
+        <Field name="ejemplares" type="Integer" visibility="private"/>
+        <Field name="ejemplaresPrestados" type="Integer" visibility="private"/>
+        <Field name="ejemplaresRestantes" type="Integer" visibility="private"/>
+        <Field name="alta" type="Boolean" visibility="private"/>
+        <Field name="autor" type="Autor" visibility="private"/>
+        <Field name="editorial" type="Editorial" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="titulo"/>
+          <Argument type="Integer" name="anio"/>
+          <Argument type="Integer" name="ejemplares"/>
+          <Argument type="Integer" name="ejemplaresPrestados"/>
+          <Argument type="Integer" name="ejemplaresRestantes"/>
+          <Argument type="boolean" name="alta"/>
+          <Argument type="Autor" name="autor"/>
+          <Argument type="Editorial" name="editorial"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getTitulo" returnType="String" visibility="public"/>
+        <Method name="setTitulo" returnType="void" visibility="public">
+          <Argument type="String" name="titulo"/>
+        </Method>
+        <Method name="getAnio" returnType="Integer" visibility="public"/>
+        <Method name="setAnio" returnType="void" visibility="public">
+          <Argument type="Integer" name="anio"/>
+        </Method>
+        <Method name="getEjemplares" returnType="Integer" visibility="public"/>
+        <Method name="setEjemplares" returnType="void" visibility="public">
+          <Argument type="Integer" name="ejemplares"/>
+        </Method>
+        <Method name="getEjemplaresPrestados" returnType="Integer" visibility="public"/>
+        <Method name="setEjemplaresPrestados" returnType="void" visibility="public">
+          <Argument type="Integer" name="ejemplaresPrestados"/>
+        </Method>
+        <Method name="getEjemplaresRestantes" returnType="Integer" visibility="public"/>
+        <Method name="setEjemplaresRestantes" returnType="void" visibility="public">
+          <Argument type="Integer" name="ejemplaresRestantes"/>
+        </Method>
+        <Method name="getAlta" returnType="Boolean" visibility="public"/>
+        <Method name="setAlta" returnType="void" visibility="public">
+          <Argument type="Boolean" name="alta"/>
+        </Method>
+        <Method name="getAutor" returnType="Autor" visibility="public"/>
+        <Method name="setAutor" returnType="void" visibility="public">
+          <Argument type="Autor" name="autor"/>
+        </Method>
+        <Method name="getEditorial" returnType="Editorial" visibility="public"/>
+        <Method name="setEditorial" returnType="void" visibility="public">
+          <Argument type="Editorial" name="editorial"/>
+        </Method>
+        <Method name="getIsbn" returnType="Long" visibility="public"/>
+        <Method name="setIsbn" returnType="void" visibility="public">
+          <Argument type="Long" name="isbn"/>
+        </Method>
+        <Method name="hashCode" returnType="int" visibility="public"/>
+        <Method name="equals" returnType="boolean" visibility="public">
+          <Argument type="Object" name="object"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="editorial" source="entidades.Libro" target="entidades.Editorial" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="entidades.Libro" target="entidades.Autor" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="autor" source="entidades.Libro" target="entidades.Autor" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="entidades.Libro" target="entidades.Editorial" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
